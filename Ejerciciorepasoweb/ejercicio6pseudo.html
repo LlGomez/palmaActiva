@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            border-top: 2px solid grey;
+            border-left: 2px solid grey;
+            margin: 0 auto;
+            
+        }
+        tr, td{
+            border-top: 2px solid black;
+            border-bottom: 2px solid grey;
+            border-left: 2px solid black;
+            border-right: 2px solid grey;
+            font-size: 50px;
+            
+        }
+
+       
+      td:nth-child(even){
+          background-color: red;
+      }
+
+      td:nth-child(3){
+          background-color: green;
+      }
+      td:last-child{
+          background-color: blue;
+      }
+      tr:first-child{
+          color: teal;
+      }
+      tr:nth-child(2){
+        color: red;
+      }
+      tr:nth-child(3){
+          color: blue;
+      }
+
+      tr:nth-child(4){
+          color: orange;
+      }
+      tr:nth-child(5){
+          color: purple;
+      }
+      tr:nth-child(6){
+          color: olive;
+      }
+      tr:nth-child(7){
+          color: fuchsia;
+      }
+      tr:last-child{
+          color: green;
+      }
+
+        
+    </style>
+</head>
+<body> 
+
+    <table>
+        <tr>
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+        </tr>
+
+        <tr>
+            <td>red</td>
+            <td></td>
+            <td>red</td>
+            <td>red</td>
+        </tr>
+
+        <tr class="azul">
+            <td>blue</td>
+            <td class="rojocuadrado">blue</td>
+            <td class="verdecuadrado">blue</td>
+            <td class="azulcuadrado"></td>
+        </tr>
+
+        <tr class="naranja">
+            <td>orange</td>
+            <td class="rojocuadrado">orange</td>
+            <td class="verdecuadrado">orange</td>
+            <td class="azulcuadrado">orange</td>
+        </tr>
+
+        <tr class="lila">
+            <td>purple</td>
+            <td class="rojocuadrado">purple</td>
+            <td class="verdecuadrado">purple</td>
+            <td class="azulcuadrado">purple</td>
+        </tr>
+
+        <tr class="olive">
+            <td>olive</td>
+            <td class="rojocuadrado">olive</td>
+            <td class="verdecuadrado">olive</td>
+            <td class="azulcuadrado">olive</td>
+        </tr>
+
+        <tr class="fuchsia">
+            <td >fuchsia</td>
+            <td class="rojocuadrado">fuchsia</td>
+            <td class="verdecuadrado">fuchsia</td>
+            <td class="azulcuadrado">fuchsia</td>
+        </tr>
+
+        <tr class="verde">
+            <td>green</td>
+            <td class="rojocuadrado">green</td>
+            <td class="verdecuadrado"></td>
+            <td class="azulcuadrado">green</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

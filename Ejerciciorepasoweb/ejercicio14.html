@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ a[href^='http']{
+     background-color: lightgrey;
+ }
+ a[href*='#']{
+     background-color: yellow;
+ }
+ a[href$='org']{
+     color: red;
+ }
+ a[class~="logo"]{
+     color: red;
+ }
+</style>
+</head>
+
+<body>
+<ul>
+  <li><a href="#internal">Enlace interno</a></li>
+  <li><a href="http://example.com">Enlace de ejemplo</a></li>
+  <li><a class="logo deca" href="#InSensitive">Enlace interno insensible Insensitive</a></li>
+  <li><a href="http://example.org">Ejemplo de enlace .org</a></li>
+</ul>
+
+</body>

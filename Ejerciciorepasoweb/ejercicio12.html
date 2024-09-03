@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Ej3 de selectores</title>
+    <style>
+       body{
+           background-color: rgb(155, 255, 164);
+       }
+        div:nth-child(1){
+            color:tomato;
+            font-weight: normal;
+        }
+        h2:nth-child(2){
+            color: blue;
+            
+        }
+        h3:nth-child(3){
+            color: blue;
+            
+        }
+        h1:nth-child(1){
+            color: black;
+            font-family: sans-serif;
+            
+        }
+       p > span:first-child{
+            font-weight: bold;
+        }
+        p > a:first-child{
+            color: #7a1200;
+            font-weight: normal;
+        }
+        p > a:nth-child(2){
+            color: #7a1200;
+            font-weight: normal;
+        }
+        p:nth-child(1){
+            color: grey;
+            font-weight: normal;
+        }
+        p:nth-child(2){
+            color: tomato;
+            font-weight: normal;
+        }
+        p:nth-child(3){
+            color: tomato;
+            font-weight: normal;
+        }
+        h3:nth-child(1){
+            color: black;
+        }
+       body > p{
+           color: green;
+           font-weight: bold;
+       }
+        
+        p + p:nth-child(2){
+             color: grey;
+        }
+        
+
+    </style>
+</head>
+<body>
+	<div>
+		<h1>La Bestia</h1>
+		<h2><a>Premio Planeta</a> 2021</h2>
+		<h3>Carmen Mola</h3>
+		<p><a>Sé el primero/a en valorar este libro</a></p>
+		<p><span>Editorial: </span><a>Editorial Planeta</a></p>
+		<p><span>Temática: </span>Novela negra</p>
+		<p><i><span>Colección: </span></i>Autores Españoles e Iberoamericanos</p>
+		<p>Número de páginas: 544</p>
+	</div>
+	<div>
+		<h3>Sinopsis de La Bestia:</h3>
+		<p>Corre el año 1834 y Madrid, una pequeña ciudad que trata de abrirse paso más allá de las murallas que la rodean, sufre una terrible epidemia de cólera. Pero la peste no es lo único que aterroriza a sus habitantes: en los arrabales aparecen cadáveres desmembrados de niñas que nadie reclama. </p>
+		<p>Todos los rumores apuntan a la Bestia, un ser a quien nadie ha visto pero al que todos temen.</p>
+	</div>
+	<div>
+		<p>Cuando la pequeña Clara desaparece, su hermana Lucía, junto con Donoso, un policía tuerto, y Diego, un periodista buscavidas, inician una frenética cuenta atrás para encontrar a la niña con vida. </p>
+		<p>En su camino tropiezan con fray Braulio, un monje guerrillero, y con un misterioso anillo de oro con dos mazas cruzadas que todo el mundo codicia y por el que algunos están dispuestos a matar.</p>
+	</div>
+	<p>De manera magistral, Carmen Mola teje, con los hilos del mejor thriller, esta novela impactante, frenética e implacable, de infierno y oscuridad.</p>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Pizarra</title>
+    <!-- SCRIPT EJERCICIO "d" -->
+    <!-- <script src="reverseArray.js"></script> -->
+</head>
+<body>
+    <!-- BOTONES -->
+    <button onclick="miFuncionF()">borrar y añadir al final</button>
+    <button onclick="miFuncionP()">borrar y añadir al principio</button>
+    <button onclick="modificarArray(lenguajes)">borrar y añadir donde uno quiera</button>
+    <button onclick="reverseArray(lenguajes)">Ordenar al revés</button>
+    <button onclick="arraynormal()">Ordenar normal</button>
+    
+    <script>
+        let ultElem = `c#`;
+        
+        const lenguajes = ["JavaScript", "Python", "Java", "C++", "C#"];
+
+       
+        let swF = true;
+        
+        
+        // console.log(lenguajes);
+
+       
+        function miFuncionF() {
+
+            
+            if (swF == true) {
+                
+                
+                lenguajes.length--;
+
+               
+
+                
+                console.log(lenguajes);
+                swF = false;
+        }
+            
+            else {
+                
+               
+                lenguajes[lenguajes.length] = ultElem;
+                console.log(lenguajes);
+                swF = true;
+
+        }
+        }
+
+        function modificarArray(lenguajes) {
+  const opcion = prompt("¿Qué deseas hacer? (eliminar/agregar)");
+
+  if (opcion.toLowerCase() === "eliminar") {
+    // Eliminar un elemento
+    const indice = parseInt(prompt("Introduce el índice del elemento a eliminar:"));
+    if (indice >= 0 && indice < lenguajes.length) {
+      lenguajes.splice(indice, 1);
+      console.log("Elemento eliminado correctamente.");
+    //   document.write(lenguajes);
+      console.log(lenguajes);
+    } else {
+      console.log("Índice inválido. Asegúrate de introducir un índice dentro del rango del array.");
+    }
+  } else if (opcion.toLowerCase() === "agregar") {
+    // Agregar un elemento
+    const indice = parseInt(prompt("Introduce el índice donde deseas agregar el elemento:"));
+    const nuevoElemento = prompt("Introduce el nuevo elemento:");
+    if (indice >= 0 && indice <= lenguajes.length) {
+      lenguajes.splice(indice, 0, nuevoElemento);
+      console.log("Elemento agregado correctamente.");
+      console.log(lenguajes);
+    } else {
+      console.log("Índice inválido. Asegúrate de introducir un índice dentro del rango del array o uno mayor a la longitud para agregar al final.");
+    }
+  } else {
+    console.log("Opción inválida. Por favor, elige 'eliminar' o 'agregar'.");
+  }
+
+  return lenguajes;
+//   console.log(lenguajes);
+}
+
+// let arrayInvertido = reverseArray(lenguajes);
+
+// function reverseArray(lenguajes) {
+    
+
+//   for (let i = 0; i < lenguajes.length / 2; i++) {
+
+//     for (let j = i; j < lenguajes.length - i - 1; j++) {
+
+//       // Intercambiamos los elementos
+//       let temp = lenguajes[j];
+
+//       lenguajes[j] = lenguajes[lenguajes.length - j - 1];
+
+//       lenguajes[lenguajes.length - j - 1] = temp;
+
+//     }
+
+//   }
+
+//   return lenguajes;
+  
+// }
+// console.log(arrayInvertido);
+  
+// function arraynormal(){
+//     console.log(lenguajes);
+// }
+    </script>
+</body>
+</html>

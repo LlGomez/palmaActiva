@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="fondo" src="" alt="imagen de fondo">
+    <button id="botonNavidad">Decoracion navideña</button>
+
+    <script>
+        // Obtener las referencias a los elementos HTML
+const imagenFondo = document.getElementById('fondo');
+const botonNavidad = document.getElementById('botonNavidad');
+
+// Función para cambiar la imagen
+function cambiarImagen() {
+  imagenFondo.src = 'fondonavideno.jpg';
+}
+
+// Añadir un event listener al botón
+botonNavidad.addEventListener('click', cambiarImagen);
+
+// Añadir un event listener a la imagen
+imagenFondo.addEventListener('click', cambiarImagen);
+    </script>
+</body>
+</html>

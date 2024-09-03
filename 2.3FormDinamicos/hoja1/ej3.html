@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Ingrese un número">
+    <button onclick="calcular()">Calcular</button>
+    <p>El cuadrado del número es: <span id="cuadrado"></span></p>
+    <p>El cubo del número es: <span id="cubo"></span></p>
+
+    <script>
+        function calcular() {
+            // Obtener el valor del input
+            const numero = document.getElementById("numero").value;
+
+            // Calcular el cuadrado y el cubo
+            const cuadrado = numero * numero;
+            const cubo = numero * numero * numero;
+
+            // Mostrar los resultados en los spans
+            document.getElementById("cuadrado").textContent = cuadrado;
+            document.getElementById("cubo").textContent = cubo;
+        }
+    </script>
+</body>
+</html>

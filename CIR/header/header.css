@@ -1,0 +1,149 @@
+:root{
+    font-family: sans-serif;
+    width: 1100px;
+    margin: 0 auto;
+   }
+   
+   #logo{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .boton{ 
+       background-color: white;
+       border: 1px solid #c8cbcd;
+       border-radius: 3px;
+       font-size: 12px;
+       width: 55px;
+       height: 25px;
+       font-weight: bold;
+   }
+   #buscador{
+       border: 1px solid #c8cbcd;
+       height: 20px;
+       border-radius: 3px;
+   }
+   hr{
+      opacity: 0.2;
+      background-color: lightgrey;
+   }
+   a{
+     padding: 20px;  
+     text-decoration: none;    
+     color: black;
+   }
+   .logoimg{
+       width: 350px;
+       margin: 10px;
+   }
+   .recursos{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20px;
+   }
+   .formacionimg{
+       width: 20px;
+       height: 20px;
+       margin: 5px;
+   }
+   #caja2{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .telfimg{
+       width: 20px;
+       padding: 3px;
+   }
+   .correoimg{
+       width: 20px;
+       padding: 5px;
+   }
+   .ubicacionimg{
+       width: 20px;
+   }
+   #navegador{
+       margin: 10px;
+       margin-left: 40px;
+   }
+   
+   @media screen and (max-width: 768px){
+       :root{
+           width: 768px;
+       }
+       #navegador{
+           max-width: 1200px;
+           width: 90%;
+           margin: auto;
+         }
+         
+         .btn {
+           display: inline-block;
+           padding: 0.5em 1.5em;
+           text-decoration: none;
+           border-radius: 50px;
+           cursor: pointer;
+           outline: none;
+           margin-top: 1em;
+           text-transform: uppercase;
+           font-weight: small;
+         }
+         
+         .btn-primary {
+           color: #fff;
+           background: #16a083;
+         }
+         
+         .btn-primary:hover {
+           background: #117964;
+           transition: background 0.3s ease-in-out;
+         }
+         
+         /* ............/navbar/............ *
+         
+         /* desktop mode............/// */
+         
+         .navbar input[type="checkbox"],
+         .navbar .hamburger-lines {
+           display: none;
+         }
+         
+         .navbar {
+           box-shadow: 0px 5px 10px 0px #aaa;
+           position: fixed;
+           width: 100%;
+           background: #fff;
+           color: #000;
+           opacity: 0.85;
+           height: 50px;
+           z-index: 12;
+         }
+         
+         .navbar-container {
+           display: flex;
+           justify-content: space-between;
+           height: 64px;
+           align-items: center;
+         }
+         
+         .menu-items {
+           order: 2;
+           display: flex;
+         }
+         
+         .menu-items li {
+           list-style: none;
+           margin-left: 1.5rem;
+           margin-bottom: 0.5rem;
+           font-size: 1.2rem;
+         }
+         
+         .menu-items a {
+           text-decoration: none;
+           color: #444;
+           font-weight: 500;
+           transition: color 0.3s ease-in-out;
+         }
+         
+       }

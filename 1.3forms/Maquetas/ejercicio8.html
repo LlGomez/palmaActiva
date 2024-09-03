@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-family: sans-serif;
+        }
+        .contenedor{
+            background-color: #02b7a1;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 65%;
+        }
+        h1{
+            color:white;
+            text-align: center;
+        }
+        .correo{
+            width: 81.5%;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            height: 25px;
+            margin-left: 30px;
+        }
+        .contra{
+            width: 40%;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-left: 30px;
+            height: 25px;
+        }
+        .iniciar{
+            background-color: #b6e2da;
+            border: none;
+            border-radius: 5px;
+            width: 40%;
+            height: 25px;
+            color: white;
+        }
+        .texto1{
+            color: white;
+        }
+        .texto2{
+            color: white;
+            margin-left: 200px;
+        }
+        .cajita{
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contenedor2{
+            margin: 0 auto;
+            background-color: #a0d5cf;
+            width: 65%;
+            border-radius: 10px;
+        }
+        .grid{
+            display: grid;
+            grid-template-areas: 
+                "nombre nombre"
+                "apellido apellido"
+                "correo correo"
+                "contraseña confirmarcontra"
+                "texto boton";
+        }
+        .grid > .nombre{
+            grid-area: nombre;
+        }
+        .grid > .apellido{
+            grid-area: apellido;
+        }
+        .grid > .correo2{
+            grid-area: correo;
+        }
+        .grid > .pass{
+            grid-area: contraseña;
+        }
+        .grid > .pass2{
+            grid-area: confirmarcontra;
+        }
+        .grid > p{
+            grid-area: texto;
+        }
+        .grid > .boton{
+            grid-area: boton;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            padding-top: 10px;
+        }
+        .nombre{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .apellido{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .correo2{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .pass{
+            margin: 5px;
+            padding: 3px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .pass2{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .boton{
+            border-radius: 5px;
+            border: none;
+            background-color: #02b7a1;
+            height: 40%;
+            width: 300px;
+            color: white;
+        }
+
+        .facebook{
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            width: 150px;
+            height: 25px;
+            border-radius: 5px;
+            margin: 10px;
+            margin-left: 60px;
+           
+        }
+        .linked{
+            background-color: #0181b2;
+            color: white;
+            border: none;
+            width: 150px;
+            height: 25px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .twitter{
+            background-color: #00aced;
+            color: white;
+            border: none;
+            width: 150px;
+            height: 25px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        p{
+            color: white;
+            font-size: 12px;
+        }
+        .texto{
+            color: #579dcb;
+        }
+        </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Iniciar sesión</h1>
+    <form>
+        <input type="text" placeholder="Correo electrónico" class="correo"> <br>
+        <input type="password" placeholder="Contraseña" class="contra">
+        <input type="submit" value="Iniciar sesión" class="iniciar"> <br>
+        <input type="checkbox" class="cajita">
+        <label class="texto1">No cerrar sesión</label>
+        <label class="texto2">¿Olvidaste tu contraseña?</label>
+    </form>
+    </div>
+    
+    <div class="contenedor2">
+        <h2>¿No tienes cuenta? Regístrate</h2>
+    <form class="grid">
+        <input type="text" placeholder="Nombre" class="nombre"> <br>
+        <input type="text" placeholder="Apellido" class="apellido"> <br>
+        <input type="text" placeholder="Correo electrónico" class="correo2"> <br>
+        <input type="text" placeholder="Contraseña" class="pass"> <br>
+        <input type="text" placeholder="Confirmar contraseña" class="pass2"> <br>
+        <p>Al hacer click en "Registrarme", acepto que he leído y entendido los <span class="texto"> Términos y condiciones </span> y el <span class="texto"> Aviso de privacidad. </span></p>
+        <input type="submit" value="Registrarme" class="boton">
+    </form>
+    </div>
+
+    <div class="contenedor2">
+        <h2>¿Prefieres entrar con redes sociales?</h2>
+            <button class="facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+            <button class="linked"><i class="fa-brands fa-linkedin-in"></i> Linkedin</button>
+            <button class="twitter"><i class="fa-brands fa-twitter"></i> Twitter</button>
+    </div>
+</body>
+</html>

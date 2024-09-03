@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nota1" placeholder="Ingrese la primera nota">
+<input type="number" id="nota2" placeholder="Ingrese la segunda nota">
+<button onclick="calcularNotaMedia()">Calcular</button>
+<p id="resultado"></p>
+
+    <script>
+        function calcularNotaMedia() {
+  // Obtener las notas ingresadas por el usuario
+  const nota1 = parseFloat(document.getElementById('nota1').value);
+  const nota2 = parseFloat(document.getElementById('nota2').value);   
+
+
+  // Validar que se hayan ingresado números
+  if (isNaN(nota1) || isNaN(nota2)) {
+    alert("Por favor, ingresa solo números para las notas.");
+    return;
+  }
+
+  // Calcular la nota media ponderada
+  const notaMedia = (nota1 * 0.4) + (nota2 * 0.6);
+
+  // Mostrar el resultado en un elemento HTML (puedes cambiar el id)
+  document.getElementById('resultado').textContent = "La nota media ponderada es: " + notaMedia.toFixed(2);
+}
+    </script>
+</body>
+</html>

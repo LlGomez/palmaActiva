@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Iconos_Trazados"
+   data-name="Iconos Trazados"
+   viewBox="0 0 24.00706 24.00706"
+   version="1.1"
+   sodipodi:docname="localizacion.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>iconos_palmaactiva-def</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1454"
+     inkscape:window-height="845"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="21.512386"
+     inkscape:cx="1.6796005"
+     inkscape:cy="10.384454"
+     inkscape:window-x="268"
+     inkscape:window-y="47"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g14"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="23.753759,5.0668488"
+       orientation="0,1"
+       id="guide1398"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.356911,5.9035761"
+       orientation="0,1"
+       id="guide1400"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+      .cls-1 {
+        fill: #e03e52;
+      }
+
+      .cls-2 {
+        fill: #444343;
+      }
+    </style>
+  </defs>
+  <title
+     id="title6">iconos_palmaactiva-def</title>
+  <g
+     id="g1394"
+     transform="matrix(1.6559652,0,0,1.6559652,-5.5380767,-0.9174657)">
+    <g
+       id="g14">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.4227142;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 10.59375,1.3417969 C 8.0023891,1.3417312 5.7782909,3.5870049 5.8769531,5.9550781 5.9243461,7.0925956 6.1580428,8.0880196 6.5273438,9.0019531 6.8966447,9.9158867 7.4020118,10.746547 7.9921875,11.5625 A 0.21137824,0.21137824 0 1 0 8.3339844,11.316406 C 7.7566074,10.518148 7.2704674,9.7161018 6.9179688,8.84375 6.5654701,7.9713982 6.3462174,7.0280505 6.3007812,5.9375 6.2137853,3.8494374 8.2495047,1.7655656 10.59375,1.765625 c 2.357839,5.97e-5 4.290685,1.82802 4.292969,4.1796875 0.0012,1.252229 -0.300819,2.2327304 -0.792969,3.1289063 -0.508154,0.9253176 -0.459746,0.9023617 -1.332031,2.2089842 -0.616472,0.923431 -0.428253,0.665964 -0.611328,0.914063 -0.189512,0.25682 -0.363194,0.534251 -0.550782,0.78125 -0.107788,0.141926 -0.311298,0.441363 -0.523437,0.707031 -0.10607,0.132834 -0.214133,0.255643 -0.302734,0.337891 -0.0886,0.08225 -0.172305,0.09954 -0.119141,0.09961 0.04481,5.8e-5 -0.03175,-0.0157 -0.115235,-0.0918 -0.08348,-0.0761 -0.184462,-0.190932 -0.285156,-0.316406 C 10.052519,13.463896 9.857528,13.177282 9.7402344,13.027344 9.6309303,12.887619 9.4328629,12.647173 9.2460938,12.419922 9.0593246,12.192671 8.8794496,11.972342 8.8339844,11.912109 a 0.21191649,0.21191649 0 1 0 -0.3378906,0.25586 c 0.066355,0.08791 0.2371028,0.292334 0.4238281,0.519531 0.1867252,0.227197 0.3865664,0.471539 0.4882812,0.601562 0.093725,0.119811 0.2996123,0.420281 0.515625,0.689454 0.1080059,0.134586 0.2180149,0.26308 0.3300779,0.365234 0.112064,0.102154 0.214408,0.200933 0.398438,0.201172 0.192386,2.49e-4 0.292403,-0.103442 0.408203,-0.210938 0.1158,-0.107495 0.232573,-0.24309 0.345703,-0.384765 0.226259,-0.283351 0.441788,-0.599621 0.529297,-0.714844 0.203006,-0.2673 0.378576,-0.548448 0.554687,-0.787109 0.182548,-0.247384 0.0085,-0.0091 0.623047,-0.929688 0.875072,-1.310796 0.847292,-1.321987 1.351563,-2.2402342 0.520274,-0.9473887 0.844982,-2.0111715 0.84375,-3.3320313 -0.0025,-2.5837403 -2.137273,-4.6034503 -4.714844,-4.6035156 z"
+         id="path10"
+         inkscape:connector-curvature="0" />
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.4227142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 10.595703,3.296875 C 9.4731053,3.2966578 8.613286,3.9817584 8.2480469,4.8632812 7.8828077,5.7448041 8.0051925,6.8370696 8.7988281,7.6308594 9.5924711,8.4246498 10.684812,8.5486645 11.566406,8.1835938 12.448,7.818523 13.134766,6.9585395 13.134766,5.8359375 13.133219,4.436578 11.995081,3.29868 10.595703,3.296875 Z m 0,0.421875 c 1.171286,0.00151 2.115893,0.9459182 2.117188,2.1171875 0,0.9522486 -0.569235,1.6508603 -1.308594,1.9570313 C 10.664937,8.0991397 9.7708487,8.0053488 9.0976562,7.3320312 8.4244716,6.6587158 8.3323595,5.7646907 8.6386719,5.0253906 8.9449842,4.2860906 9.6434599,3.7185657 10.595703,3.71875 Z"
+         id="path12"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Se inicializa una variable vacía para almacenar las cadenas
+        let cadenas = "";
+        
+        // Bucle para solicitar cadenas al usuario
+        while (true) {
+          const cadena = prompt("Ingrese una cadena de texto (o \"cancelar\" para salir): ");
+        
+          // Se comprueba si el usuario ha introducido "cancelar"
+          if (cadena.toLowerCase() === "cancelar") {
+            break;
+          }
+        
+          // Se añade la cadena a la variable, concatenada con un guion
+          cadenas += `${cadena} - `;
+        }
+        
+        // Se elimina el último guion
+        cadenas = cadenas.slice(0, -2);
+        
+        // Se muestra el resultado final
+        alert("Cadenas concatenadas:\n" + cadenas);
+        </script>
+</body>
+</html>

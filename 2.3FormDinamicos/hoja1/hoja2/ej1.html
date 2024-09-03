@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Ingrese un número">
+    <select id="multiplicador">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <input type="text" id="resultado" disabled>
+
+    <script>
+        function multiplicar() {
+            // Obtener los valores de los inputs
+            const numero = document.getElementById('numero').value;
+            const multiplicador = document.getElementById('multiplicador').value;
+
+            // Realizar la multiplicación
+            const resultado = numero * multiplicador;
+
+            // Mostrar el resultado
+            document.getElementById('resultado').value = resultado;
+        }
+    </script>
+</body>
+</html>

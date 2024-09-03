@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #949aa3;
+            color: white;
+        }
+        table, td, th {
+            border: 1px solid white;
+            border-collapse: collapse;
+            /* text-align: center; */
+            font-family: sans-serif;
+            padding: 1%;
+        }
+        td, th {
+    		width: 25%; 
+            background-color: #282c31;
+        }
+        .ll>td {
+            background-color:  #464b50;
+        }
+        tr.arriba>td {
+            font-size: 20px;
+            background-color: #535b64;
+            text-align: left;
+            border: none;
+        }
+        table {
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="arriba">
+            <td>Atributo</td>
+            <td>Valor</td>
+            <td>Descripción</td>
+            <td>Ejemplo</td>
+        </tr>
+        <tr>
+            <td>accept</td>
+            <td>Tipo de MIME</td>
+            <td>Especifica los tipos de archivos que se pueden seleccionar en un campo de tipo "file"</td>
+            <td>accept=".jpg,.png,.gif"</td>
+        </tr>
+        <tr class="ll">
+            <td>alt</td>
+            <td>Texto alternativo</td>
+            <td>Texto que se muestra cuando la imagen no se puede cargar</td>
+            <td>alt="Descripción de la imagen"</td>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>on</td>
+            <td>Especifica si el navegador debe autocompletar el campo</td>
+            <td>autocomplete="on"</td>
+        </tr>
+        <tr class="ll">
+            <td>checked</td>
+            <td>checked</td>
+            <td>Indica que la casilla de verificación está seleccionada por defecto</td>
+            <td>&lt;input type="checkbox" checked&gt;</td>
+        </tr>
+        <tr>
+            <td>cols</td>
+            <td>Número</td>
+            <td>Número de columnas en un campo de tipo "textarea"</td>
+            <td>cols="40"</td>
+        </tr>
+        <tr class="ll">
+            <td>disabled</td>
+            <td>disabled</td>
+            <td>Deshabilita el control</td>
+            <td>&lt;input type="text" disabled&gt;</td>
+        </tr>
+        <tr>
+            <td>enctype</td>
+            <td>application/x-www-form-urlencoded</td>
+            <td>Tipo de codificación de los datos del formulario</td>
+            <td>enctype="application/x-www-form-urlencoded"</td>
+        </tr>
+        <tr class="ll">
+            <td>for</td>
+            <td>ID del elemento</td>
+            <td>Asocia la etiqueta con un elemento de formulario</td>
+            <td>for="nombre"</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>Número</td>
+            <td>Altura de un campo de tipo "textarea"</td>
+            <td>height="150px"</td>
+        </tr>
+        <tr class="ll">
+            <td>id</td>
+            <td>ID único</td>
+            <td>Identificador único para el elemento</td>
+            <td>id="miFormulario"</td>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>ID del elemento</td>
+            <td>Asocia un elemento "datalist" con el campo de entrada</td>
+            <td>list="sugerencias"</td>
+        </tr>
+        <tr class="ll">
+            <td>max</td>
+            <td>Valor máximo</td>
+            <td>Valor máximo que se puede introducir en un campo de tipo "number"</td>
+            <td>max="100"</td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>Número</td>
+            <td>Número máximo de caracteres que se pueden introducir en un campo</td>
+            <td>maxlength="20"</td>
+        </tr>
+        <tr class="ll">
+            <td>min</td>
+            <td>Valor mínimo</td>
+            <td>Valor mínimo que se puede introducir en un campo de tipo "number"</td>
+            <td>min="1"</td>
+        </tr>
+        <tr>
+            <td>multiple</td>
+            <td>multiple</td>
+            <td>Permite seleccionar múltiples opciones en un campo de tipo "select"</td>
+            <td>&lt;select multiple&gt;</td>
+        </tr>
+        <tr class="ll">
+            <td>name</td>
+            <td>Nombre del campo</td>
+            <td>Nombre del campo que se enviará al servidor</td>
+            <td>name="nombre"</td>
+        </tr>
+        <tr>
+            <td>pattern</td>
+            <td>Expresión regular</td>
+            <td>Patrón de caracteres que se deben introducir en un campo</td>
+            <td>pattern="[A-Za-z0-9_-]+"</td>
+        </tr>
+        <tr class="ll">
+            <td>placeholder</td>
+            <td>Texto</td>
+            <td>Texto que se muestra en un campo vacío como sugerencia</td>
+            <td>placeholder="Introduce tu nombre"</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>readonly</td>
+            <td>Hace que el campo sea de solo lectura</td>
+            <td>&lt;input type="text" readonly&gt;</td>
+        </tr>
+        <tr class="ll">
+            <td>required</td>
+            <td>required</td>
+            <td>Indica que el campo es obligatorio</td>
+            <td>&lt;input type="text" required&gt;</td>
+        </tr>
+        <tr>
+            <td>rows</td>
+            <td>Número</td>
+            <td>Número de filas en un campo de tipo "textarea"</td>
+            <td>rows="10"</td>
+        </tr>
+        <tr class="ll">
+            <td>size</td>
+            <td>Número</td>
+            <td>Tamaño del campo de entrada</td>
+            <td>size="20"</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>URL</td>
+            <td>URL de la imagen que se muestra en un campo de tipo "image"</td>
+            <td>src="imagen.jpg"</td>
+        </tr>
+        <tr class="ll">
+            <td>step</td>
+            <td>Valor</td>
+            <td>Incremento o decremento permitido en un campo de tipo "number"</td>
+            <td>step="0.1"</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>_blank</td>
+            <td>Ventana en la que se abrirá el enlace al enviar el formulario</td>
+            <td>target="_blank"</td>
+        </tr>
+        <tr class="ll">
+            <td>type</td>
+            <td>Tipo de campo</td>
+            <td>Especifica el tipo de campo de formulario (text, password, checkbox, radio, etc.)</td>
+            <td>type="text"</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>Valor por defecto</td>
+            <td>Valor inicial del campo</td>
+            <td>value="correo@ejemplo.com"</td>
+        </tr>
+        <tr class="ll">
+            <td>width</td>
+            <td>Número</td>
+            <td>Ancho del campo de entrada</td>
+            <td>width="100"</td>
+        </tr>
+    </table>
+</body>
+
+</html>

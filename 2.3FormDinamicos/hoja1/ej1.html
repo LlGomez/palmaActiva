@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" id="numero" name="numero">
+        <br>
+        <label for="resultado">10% del número:</label>
+        <input type="number" id="resultado" name="resultado" disabled>
+    </form>
+
+    <script>
+        // Obtener los elementos del formulario
+        const numeroInput = document.getElementById('numero');
+        const resultadoInput = document.getElementById('resultado');
+
+        // Función para calcular el 10% y actualizar el resultado
+        function calcular10Porciento() {
+            const numero = parseFloat(numeroInput.value);
+            const diezPorciento = numero * 0.1;
+            resultadoInput.value = diezPorciento;
+        }
+
+        // Agregar un event listener al input para activar la función al cambiar su valor
+        numeroInput.addEventListener('input', calcular10Porciento);
+    </script>
+</body>
+</html>

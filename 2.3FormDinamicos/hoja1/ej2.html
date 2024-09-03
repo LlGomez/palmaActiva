@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="expresion" placeholder="Ingrese una expresión matemática">
+    <button onclick="evaluar()">Evaluar</button>
+    <input type="text" id="resultado" disabled>
+
+    <script>
+        function evaluar() {
+            const expresion = document.getElementById("expresion").value;
+            const resultado = eval(expresion);
+            document.getElementById("resultado").value = resultado;
+        }
+    </script>
+</body>
+</html>

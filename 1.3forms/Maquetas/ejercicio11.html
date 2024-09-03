@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        h4{
+            background-color: black;
+            color: white;
+            border-top: 1px solid red;
+        }
+        
+        .grid{
+            display: grid;
+            grid-template-areas: 
+                "personales contacto informacion"
+                "nombre correo usuario"
+                "apellido confirmarcorreo pass"
+                "segundoapellido pais passfuerte"
+                "sexo codigopostal verificarpass"
+                "fecha direccion pregunta"
+                "nacionalidad ciudad respuesta"
+                "dni domicilio codigo"
+                "18 telefono .";
+        }
+        .grid > .personales{
+            grid-area: personales;
+        }
+        .grid > .contacto {
+            grid-area: contacto;                                                                                                                                
+        }
+        .grid > .informacion{
+            grid-area: informacion;
+        }
+        .grid > .nombre{
+            grid-area: nombre;
+        }
+        .grid > .correo{
+            grid-area: correo;
+        }
+        .grid > .usuario{
+            grid-area: usuario;
+        }
+        .grid > .apellido{
+            grid-area: apellido;
+        }
+
+        .grid > .confirmarcorreo{
+            grid-area: confirmarcorreo;
+        }
+        .grid > .pass{
+            grid-area: pass;
+        }
+        .grid > .segundoapellido{
+            grid-area: segundoapellido;
+        }
+        .grid > .pais {
+            grid-area: pais;
+        }
+        .grid > .passfuerte{
+            grid-area: passfuerte;
+        }
+        .grid > .sexo{
+            grid-area: sexo;
+        }
+        .grid > .codigopostal{
+            grid-area: codigopostal;
+        }
+        .grid > .verificarpass{
+            grid-area: verificarpass;
+        }
+        .grid > .fecha{
+            grid-area: fecha;
+        }
+        .grid > .dirrecion{
+            grid-area: direccion;
+        }
+        .grid > .pregunta{
+            grid-area: pregunta;
+        }
+        .grid > .nacionalidad{
+            grid-area: nacionalidad;
+        }
+        .grid > .ciudad{
+            grid-area: ciudad;
+        }
+        .grid > .respuesta{
+            grid-area: respuesta;
+        }
+        .grid > .dni{
+            grid-area: dni;
+        }
+        .grid > .domicilio{
+            grid-area: domicilio;
+        }
+        .grid > .codigo{
+            grid-area: codigo;
+        }
+        .grid > .edad{
+            grid-area: 18;
+        }
+        .grid > .telefono{
+            grid-area: telefono;
+        }
+        .personales{
+            border-bottom: 1px solid black;
+            margin: 10px;
+        }
+         .contacto{
+            border-bottom: 1px solid black;
+            margin: 10px;
+         }
+       .informacion{
+        border-bottom: 1px solid black;
+        margin: 10px;
+       }
+       div{
+        margin: 10px;
+       }
+      
+       .edad{
+        position: relative;
+       margin-left: 100px;
+        font-size: 50px;
+        bottom: 40px;
+       }
+       .telefono{
+        margin: 10px;
+       }
+       .contenedor{
+        
+        text-align: center;
+       }
+       .texto{
+        color: #78a500;
+        font-size: 12px;
+       }
+       .boton{
+        color: white;
+        background-color: #78a500;
+        width: 300px;
+        height: 50px;
+    }
+    i{
+        color: lightgrey;
+    }
+    @media screen  and (max-width: 500px) {
+        .grid{
+            display: grid;
+            grid-template-areas:         
+                "personales"
+                "contacto"
+                "informacion"
+                "nombre"
+                "correo"
+                "usuario"
+                "apellido"
+                "confirmarcorreo"
+                "pass"
+                "segundoapellido"
+                "pais"
+                "passfuerte"
+                "sexo"
+                "codigopostal"
+                "verificarpass"
+                "fecha"
+                "direccion"
+                "pregunta"
+                "nacionalidad"
+                "ciudad"
+                "respuesta"
+                "dni"
+                "domicilio"
+                "codigo"
+                "18"
+                "telefono"
+                ;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="ejercicio11.PNG">
+    </header>
+
+    <h4>Regístrate ahora y comienza a jugar</h4>
+ 
+    <div>
+        <form class="grid">
+        <label class="personales">Tus datos personales</label> 
+        <label class="contacto">Tus datos de contacto</label> 
+        <label class="informacion">Informacion de tu cuenta</label> 
+        <div class="nombre" >
+        <label>Nombre Completo *</label> <br> <br>
+        <input type="text" placeholder="Ej: Maria Rosa, José Juan, Antonio"> <i class="fa-solid fa-check"></i>
+    </div>
+    <div  class="correo" >
+        <label>Correo electrónico: *</label> <br> <br>
+        <input type="text" placeholder="Ej: email@gmail.com"> <i class="fa-solid fa-check"></i>
+    </div>
+    <div class="usuario">
+        <label>Usuario: *</label> <br> <br>
+        <input type="text" > <i class="fa-solid fa-check"></i>
+    </div>
+    <div class="apellido">
+    <label>Apellido *</label> <br> <br>
+    <input type="text"> <i class="fa-solid fa-check"></i>
+    </div>
+    <div class="confirmarcorreo">
+    <label>Confirmar E-mail: *</label> <br> <br>
+    <input type="text"> <i class="fa-solid fa-check"></i>
+    </div>
+    <div class="pass">
+    <label>Contraseña: *</label> <br> <br>
+    <input type="password" placeholder="Ej:Sportium-1"> <i class="fa-solid fa-check"></i>
+    </div>
+        <div class="segundoapellido">
+            <label>Segundo apellido</label> <br> <br>
+            <input type="text"> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="pais">
+            <label>País de Residencia: *</label> <br> <br>
+            <select required>
+                <option value="01">España</option>
+                <option value="02">Francia</option>
+                <option value="03">Reino Unido</option>
+                <option value="04">Noruega</option>
+                <option value="05">Alemania</option>
+            </select> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="passfuerte">
+            <label>Fortaleza de contraseña</label> <br> <br>
+            <label>Débil                 Fuerte</label> 
+        </div>
+        <div class="sexo">
+            <label>Sexo: *</label> <br> <br>
+            <select>
+                <option value="01">Masculino</option>
+                <option value="02">Femenino</option>
+                <option value="03">No binario</option>
+                <option value="04">Helicoptero apache de combate</option>
+            </select> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="codigopostal">
+            <label>Código postal: *</label> <br> <br>
+            <input type="text"><i class="fa-solid fa-check"></i>
+        </div>
+        <div class="verificarpass">
+            <label>Verificar contraseña: *</label> <br> <br>
+            <input type="text"><i class="fa-solid fa-check"></i>
+        </div>
+        <div class="fecha">
+            <label>Fecha nacimiento: *</label> <br> <br>
+            <input type="date"><i class="fa-solid fa-check"></i>
+        </div>
+        <div class="direccion">
+            <label>Dirección</label> <br> <br>
+            <input type="text"><i class="fa-solid fa-check"></i>
+        </div>
+        <div class="pregunta">
+            <label>Pregunta secreta: *</label> <br> <br>
+            <select>
+                <option value="00">Escoge</option>
+                <option value="01">¿Cual fue tu primera mascota?</option>
+            </select> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="nacionalidad">
+            <label>Nacionalidad *</label> <br> <br>
+            <select>
+                <option value="01">España</option>
+                <option value="02">Francia</option>
+                <option value="03">Alemania</option>
+            </select> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="ciudad">
+            <label>Pueblo/Ciudad: *</label> <br> <br>
+            <input type="text"> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="respuesta">
+            <label>Respuesta: *</label> <br> <br>
+            <input type="text">  <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="dni">
+            <label>DNI/NIE *</label> <br> <br>
+            <input type="text" placeholder="Ej:12345678X o X1234567B"><i class="fa-solid fa-check"></i>
+        </div>
+        <div class="domicilio">
+            <label>Domicilio Fiscal: *</label> <br> <br>
+            <select>
+                <option value="00">Escoge</option>
+                <option value="01">Palma</option>
+            </select> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="codigo"> 
+            <label>Código de registro (opcional):</label> <br> <br>
+            <input type="text"> <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="edad">
+            <i class="fa-solid fa-person"></i>
+        </div>
+        <div class="telefono">
+            <label>Teléfono: *</label> <br> <br>
+            <input type="text"> <i class="fa-solid fa-check"></i>
+        </div>
+    </form>
+<hr>
+<div class="contenedor">
+<form>
+        <input type="checkbox">
+        <label class="texto"><i class="fa-solid fa-check"></i> Acepto los Términos y Condiciones y haber leído la Política de Privacidad</label> <br> <br>
+    <button class="boton">¡REGÍSTRATE AHORA!</button>
+</form>
+</div>
+    </div>
+</body>
+</html>

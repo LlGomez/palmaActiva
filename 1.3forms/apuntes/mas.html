@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        div {
+            margin: 7px;
+        }
+
+        form {
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+
+        p {
+            margin-left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario con Inputs</h1>
+    <form action="#">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="apellido">Apellidos</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date">
+        </div>
+
+        <div>
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label for="teléfono">Teléfono</label>
+            <input type="tel" required>
+        </div>
+        <div>
+            <label for="username">Usuario</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="pwd">Contraseña</label>
+            <input type="password" required>
+        </div>
+        <div>
+            <label for="">Banco de Crédito:</label>
+            <select>
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="">Santander</option>
+                <option value="">Caixa</option>
+                <option value="">BBVA</option>
+            </select>
+        </div>
+        <p>¿Tiene un vehículo?</p>
+        <div class="select">
+            <li type="none">
+                <input type="checkbox" multiple>
+                <label for="vehicle1">Si, si tengo auto.</label>
+            </li>
+            <li type="none">
+                <input type="checkbox" multiple>
+                <label for="vehicle2">No, no tengo auto.</label>
+            </li>
+            <li type="none">
+                <input type="checkbox">
+                <label for="vehicle3">Otro</label>
+            </li>
+        </div>
+        <div>
+            <label for="">Marca de su vehículo/s:</label>
+            <select multiple>
+                <option value="">Fiat</option>
+                <option value="">Audi</option>
+                <option value="">BMW</option>
+                <option value="">Nissan</option>
+            </select>
+        </div>
+        <div>
+            <label for="nombre"></label>
+            <textarea rows="10" cols="35"
+                placeholder="Enter your message for us here. We will get back to you within 2 business days."></textarea>
+        </div>
+        <p>Actividades laborales</p>
+        <div>
+            <input type="radio" checked>
+            <label for="html">Trabajo</label>
+            <input type="radio">
+            <label for="css">Estudio</label>
+            <input type="radio">
+            <label for="javascript">Trabajo y estudio</label>
+        </div>
+        <button type="button" value="Enviar">Enviar</input>
+    </form>
+</body>
+
+</html>

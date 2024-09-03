@@ -1,0 +1,55 @@
+Característica	<input type="button">	<button>
+ 
+11    ¿Diferencias entre input type="button" y button?
+
+   Característica     <input type="button">	                  <button></button>
+    Estructura	          Solo texto	             Puede contener texto, HTML e imágenes
+  Comportamiento	   No tiene por defecto	             Envía formulario por defecto
+  Accesibilidad	            Mejor	                             Requiere ARIA
+  Ámbito de uso  	     Formularios                            Cualquier lugar
+
+12  ¿Para qué se utiliza el atributo name en los campos de formulario?
+    
+        Identificar el campo y Enviar datos al servidor
+
+        Preguntas Cortas FORMULARIOS
+        45
+        1.- ¿Qué valores puede aceptar un type="number" si step=3?
+        
+        2.- ¿Con qué types se puede utilizar el atributo step?
+        
+        3.- ¿Qué valor debe tener step para que un campo numérico acepte valores decimales?
+        
+        4.- ¿Cuál es el valor por defecto de step? ¿Qué supone?
+        
+        5.- ¿Qué relación hay entre size, maxlength y minlength?
+        
+        6.- ¿Puedo limitar el número de caracteres de un campo numérico con size?
+        
+        7.- Si no especifico maxlength en un type="text" pero tengo size=30, ¿cuántos caracteres puedo introducir?
+        
+        8.- Si introduzco en un type="date" el valor 22-02-2022, ¿qué valor envía?
+        
+        9.- ¿type="radio" y type="checkbox" envían los valores marcados y los no marcados? ¿"radio" solo los marcados y "checkbox" todos?
+        
+        10.- ¿Se pueden hacer grupos de botones con Type="radio"?¿Qué otro atributo han de tener para poder hacer los grupos?
+        
+        11.- ¿Diferencias entre input type="button" y button?
+        
+        12.- ¿Para qué se utiliza el atributo name en los campos de formulario?
+        
+        13.- ¿Las etiquetas rows y cols son obligatorias en el campo textarea? ¿Qué papel desempeñan?
+        
+        14.- ¿Para qué utilizamos el atributo selected en un select?
+        
+        15.- ¿Cómo afecta el reset a los atributos value y placeholder.
+        
+        16.- ¿Cómo conseguir que un checkbox o un radio se marquen al hacer clic en el texto que acompaña el elemento del formulario?
+        
+        17.- ¿Qué diferencia hay entre las etiquetas select y datalist?
+        
+        18.- ¿Qué necesitamos hacer en un formulario para poder subir un fichero adjunto?
+        
+        19.- Si quiero que el usuario pueda subir varios ficheros adjuntos, ¿qué atributo tiene que estar presente en el input type="file"?
+        
+        20.- Campos de formulario con type="hidden" para qué se pueden utilizar?

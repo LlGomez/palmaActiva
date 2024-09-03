@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarDominio()">Mostrar Dominio</button>
+
+    <script>
+        function mostrarDominio() {
+            const url = window.location.href;
+            const dominio = new URL(url).hostname;
+            alert("El dominio de esta página es: " + dominio);
+        }
+    </script>
+</body>
+</html>

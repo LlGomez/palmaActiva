@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const frase = prompt("Introduzca una frase célebre: ");
+        const palabras = frase.split (' ').length;
+        //Palabras y letras
+        frasesinespacios = frase.replaceall(" ", "");
+        document.write("La frase consta de  " + frasesinespacios.length + " letras ");
+        document.write("La cadena consta de " + palabras + " palabras");
+        
+        //posicion primera y ultima a
+
+        document.write(frase.indexOf("a"));
+
+        // cuenta = 0;
+        // posicion = frase.indexOf("a");
+        // while(posicion != -1){
+        //     cuenta++;
+        //     posicion = frase.indexOf("a", posicion + 1);
+        //     document.write(" " + posicion);   
+        // }
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creamos un array para los nombres de los días de la semana
+const diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+// Solicitamos al usuario un número entre 0 y 6
+const numeroDia = parseInt(prompt("Introduce un número entre 0 y 6: "));
+
+// Validamos que el número esté dentro del rango
+if (numeroDia >= 0 && numeroDia <= 6) {
+  // Mostramos el día de la semana correspondiente
+  const diaSeleccionado = diasSemana[numeroDia];
+  document.write(`El día correspondiente al número ${numeroDia} es: ${diaSeleccionado}`);
+} else {
+  // Si el número está fuera de rango, mostramos un mensaje de error
+  document.write("Error: El número introducido debe estar entre 0 y 6.");
+}
+    </script>
+</body>
+</html>

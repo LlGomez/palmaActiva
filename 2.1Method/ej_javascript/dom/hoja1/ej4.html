@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarTitulo()">Mostrar Titulo</button>
+    <script>
+        function mostrarTitulo() {
+  // Obtenemos el título del documento utilizando document.title
+  const titulo = document.title;
+
+  // Creamos un nuevo elemento <p> para mostrar el título
+  const parrafo = document.createElement('p');
+
+  // Asignamos el título al contenido del párrafo
+  parrafo.textContent = `El título del documento es: ${titulo}`;
+
+  // Agregamos el párrafo al cuerpo del documento
+  document.body.appendChild(parrafo);
+}
+    </script>
+</body>
+</html>

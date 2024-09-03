@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="text" id="dni" placeholder="Introduce tu DNI">
+    <span id="resultado"></span>
+    <script>
+        //inicializamos variables
+        var dniInput = document.getElementById('dni');
+        var resultado = document.getElementById('resultado');
+
+            //un event listener para escribir en el documento cuando esté bien o mal
+    dniInput.addEventListener('input', () => {
+    //lo convertimos en mayusculas
+    var dni = dniInput.value.toUpperCase();
+    //dividimos el numero y las letras en 2 var distintos
+    var numeroDni = dni.slice(0, -1);
+    var letraDni = dni.slice(-1);
+
+    //condicion de que si es 8 o menor de 8 le pone un aviso
+    if (numeroDni.length !== 8 || isNaN(numeroDni)) {
+        resultado.textContent = 'El Dni debe tener 9 digitos';
+        // return;
+    }
+
+    //DNI
+    const letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
+    var resto = numeroDni % 23;
+    var letraCalculada = letras.charAt(resto);
+
+    //condicion de que si esta bien escribe un tick y si no una X
+    if (letraCalculada === letraDni) {
+        resultado.textContent = '✅';
+    } else {
+        resultado.textContent = '❌';
+    }
+});
+
+    </script>
+</form>
+</body>
+</html>

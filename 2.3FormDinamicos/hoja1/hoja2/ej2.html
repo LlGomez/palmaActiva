@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Introduce ºC">
+    <input type="number" placeholder="Introduce ºF">
+
+    <script>
+        function convertirTemperatura() {
+  const celsiusInput = document.getElementById('celsius');
+  const fahrenheitInput = document.getElementById('fahrenheit');
+  const celsiusValue   
+ = parseFloat(celsiusInput.value);
+  const fahrenheitValue = parseFloat(fahrenheitInput.value);   
+
+
+  // Si se ingresó un valor en Celsius, convertir a Fahrenheit
+  if (!isNaN(celsiusValue)) {
+    const fahrenheit = (celsiusValue * 9/5) + 32;
+    fahrenheitInput.value = fahrenheit.toFixed(2); // Redondeamos a 2 decimales
+  } 
+  // Si se ingresó un valor en Fahrenheit, convertir a Celsius
+  else if (!isNaN(fahrenheitValue)) {
+    const celsius = (fahrenheitValue - 32) * 5/9;
+    celsiusInput.value = celsius.toFixed(2);
+  }
+}
+    </script>
+</body>
+</html>

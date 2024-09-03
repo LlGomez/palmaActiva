@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generarNumerosAleatoriosSinRepeticion(cantidadNumeros, maximo) {
+
+  const numerosAleatorios = [];
+
+  while (numerosAleatorios.length < cantidadNumeros) {
+    const numeroAleatorio = Math.floor(Math.random() * maximo) + 1;
+
+    if (!numerosAleatorios.includes(numeroAleatorio)) {
+      numerosAleatorios.push(numeroAleatorio);
+    }
+  }
+
+  return numerosAleatorios;
+}
+
+// Ejemplo de uso
+const numeros = generarNumerosAleatoriosSinRepeticion(50, 1000);
+document.write(numeros);
+console.log(numeros); // Mostrará 3 números aleatorios entre 1 y 99 sin repetición
+
+    </script>
+</body>
+</html>

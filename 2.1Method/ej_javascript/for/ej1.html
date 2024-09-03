@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numberPyramid(n) {
+  let pyramid = "";
+
+  for (let i = 1; i <= n; i++) {
+    let rowString = "";
+    for (let j = 1; j <= i; j++) {
+      rowString += j;
+    }
+
+    pyramid += rowString + "\n";
+  }
+
+  return pyramid;
+}
+
+const pyramid = numberPyramid(5);
+document.write(pyramid);
+console.log(pyramid);
+
+    </script>
+</body>
+</html>

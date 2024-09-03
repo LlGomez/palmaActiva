@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="altura">Altura (cm):</label>
+<input type="number" id="altura" placeholder="Ingrese su altura">
+
+<label for="edad">Edad:</label>
+<input type="number" id="edad" placeholder="Ingrese su edad">
+
+<label for="sexo">Sexo:</label>
+<select id="sexo">
+    <option value="hombre">Hombre</option>
+    <option value="mujer">Mujer</option>
+</select>
+
+<button onclick="calcularPesoAproximado()">Calcular peso</button>
+
+<p id="resultado"></p>
+
+    <script>
+        function calcularPesoAproximado() {
+    // Obtener los datos del usuario
+    const altura = parseFloat(document.getElementById('altura').value);
+    const edad = parseFloat(document.getElementById('edad').value);
+    const sexo = document.getElementById('sexo').value;
+
+    // Validar los datos ingresados
+    if (isNaN(altura) || isNaN(edad)) {
+        alert("Por favor, ingresa valores numéricos para la altura y la edad.");
+        return;
+    }
+
+    // Calcular el peso según el sexo
+    let peso;
+    if (sexo === 'hombre') {
+        peso = 50 + ((altura - 150) / 4) * 3 + (edad - 20) / 4;
+    } else if (sexo === 'mujer') {
+        peso = (50 + ((altura - 150) / 4) * 3 + (edad - 20) / 4) * 0.9;
+    } else {
+        alert("Por favor, selecciona un sexo válido (hombre o mujer).");
+        return;
+    }
+
+    // Mostrar el resultado
+    document.getElementById('resultado').textContent = "El peso aproximado es: " + peso.toFixed(2) + " kg";
+}
+    </script>
+</body>
+</html>

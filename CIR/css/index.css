@@ -1,0 +1,237 @@
+:root{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ width: 1100px;
+ margin: 0 auto;
+ font-size: 14px;
+}
+header{
+    padding: 15px;
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton{ 
+    background-color: white;
+    border: 1px solid #c8cbcd;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 55px;
+    height: 25px;
+    font-weight: bold;
+}
+#buscador{
+    border: 1px solid #c8cbcd;
+    height: 20px;
+    border-radius: 3px;
+}
+hr{
+   opacity: 0.2;
+   background-color: lightgrey;
+}
+a{
+  padding: 27px;  
+  text-decoration: none;    
+  color: black;
+}
+.logoimg{
+    width: 350px;
+    margin: 10px;
+}
+.recursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formacionimg{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+#caja2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.telfimg{
+    width: 20px;
+    padding: 3px;
+}
+.correoimg{
+    width: 20px;
+    padding: 5px;
+}
+.ubicacionimg{
+    width: 20px;
+}
+#navegador{
+    margin: 10px;
+    margin-left: 40px;
+}
+
+#principal{
+  margin: 80px;
+}
+#imgcirinterior{
+  width: 470px;
+  height: 300px;
+}
+#cir-interior{
+    display: flex;
+}
+.titulo{
+    font-weight: normal;
+}
+#informa{
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.3em;
+}   
+#textohorarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#horarios{
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.negrita{
+    font-weight: bold;
+}
+.imgreloj{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.tiempos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10px;
+}
+.textoimgreloj{
+    text-align: center;
+    margin: 0px;
+}
+#cir24h{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 40px;
+}
+.texto24h{
+    line-height: 1.3em;
+}
+#requisitos{
+display: flex;
+align-items: center;
+justify-content: start;
+}
+#imgrequisitos{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+#opciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 2 columnas de igual tamaño */
+    
+}
+#noticias{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#titulonoticia{
+    display: flex;
+    align-items: center;
+}
+#imgnoticia{
+    width: 75px;
+    height: 75px;
+}
+#analisis{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#tituloanalisis{
+    display: flex;
+    align-items: center;
+}
+#imganalisi{
+    width: 75px;
+    height: 75px;
+}
+
+#formacion{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#tituloformacion{
+    display: flex;
+    align-items: center;
+}
+#imgformacion{
+    width: 75px;
+    height: 75px;
+}
+#feina{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#titulofeina{
+    display: flex;
+    align-items: center;
+}
+#imgfeina{
+    width: 75px;
+    height: 75px;
+}
+#empresa{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#tituloempresa{
+    display: flex;
+    align-items: center;
+}
+#imgempresa{
+    width: 75px;
+    height: 75px;
+}
+#internacional{
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+#titulointernacional{
+    display: flex;
+    align-items: center;
+}
+#imginternacional{
+    width: 75px;
+    height: 75px;
+}
+
+.masinfo{
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.5s ease;
+}
+
+.masinfo:hover{
+    transform: scale(1.2);
+}

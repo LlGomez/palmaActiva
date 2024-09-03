@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // var asignaturas = ['Html', 'CSS', 'JS', 'FORM'];
+        // var alumnos = new Array();
+        // alumnos[0] = new Array({"5" , "8" , "9" , "6"});
+        // alumnos[1] = new Array({"4", "3", "5", "8"});
+        // alumnos[2] = new Array({"8", "2", "6", "10"});
+        // alumnos[3] = new Array({"5", "2" , "1" , "9"});
+
+        // Inicializamos la matriz bidimensional
+let calificaciones = [
+    ["HTML", "CSS", "JS", "FORM"],
+    []
+];
+
+// Función para agregar una asignatura
+function agregarAsignatura() {
+    let nuevaAsignatura = prompt("Ingrese el nombre de la nueva asignatura:");
+    calificaciones[0].push(nuevaAsignatura);
+
+    let agregarMas = prompt("¿Desea agregar otra asignatura? (s/n)");
+    if (agregarMas === "s") {
+        agregarAsignatura();
+    }
+}
+
+// Función para agregar un alumno
+function agregarAlumno() {
+    let nuevoAlumno = prompt("Ingrese el nombre del nuevo alumno:");
+    calificaciones[1].push(nuevoAlumno);
+
+    let agregarMas = prompt("¿Desea agregar otro alumno? (s/n)");
+    if (agregarMas === "s") {
+        agregarAlumno();
+    }
+}
+
+// Función para ingresar notas
+function ingresarNotas() {
+    let alumno = prompt("Ingrese el nombre del alumno:");
+    let indiceAlumno = calificaciones[1].indexOf(alumno);
+
+    if (indiceAlumno !== -1) {
+        for (let i = 0; i < calificaciones[0].length; i++) {
+            let asignatura = calificaciones[0][i];
+            let nota = prompt(`Ingrese la nota de ${alumno} en ${asignatura}:`);
+            calificaciones[indiceAlumno + 1][i] = nota;
+        }
+    } else {
+        alert("El alumno no se encuentra en la lista.");
+    }
+}
+
+// Función para mostrar el menú
+function mostrarMenu() {
+    let opcion = prompt("Seleccione una opción:\n1. Alta de asignaturas\n2. Alta de alumnos\n3. Introducción de notas");
+
+    switch (opcion) {
+        case "1":
+            agregarAsignatura();
+            break;
+        case "2":
+            agregarAlumno();
+            break;
+        case "3":
+            ingresarNotas();
+            break;
+        default:
+            alert("Opción inválida.");
+    }
+}
+
+// Mostrar el menú inicial
+mostrarMenu();
+
+
+    </script>
+</body>
+</html>

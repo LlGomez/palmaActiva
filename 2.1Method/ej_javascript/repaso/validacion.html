@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="myForm" onsubmit="return validarFormulario()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <span id="errorNombre" class="error"></span>
+    <br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="errorEmail" class="error"></span>
+    <br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="18" required>
+    <span id="errorEdad" class="error"></span>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    function validarFormulario() {
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const   
+ edad = document.getElementById('edad').value;   
+
+
+      const errorNombre = document.getElementById('errorNombre');
+      const errorEmail = document.getElementById('errorEmail');
+      const errorEdad = document.getElementById('errorEdad');
+
+      let valido = true;
+
+      // Validación del nombre
+      if (nombre.trim() === '') {
+        errorNombre.textContent = 'Por favor, ingresa tu nombre.';
+        valido = false;
+      } else {
+        errorNombre.textContent = '';
+      }
+
+      // Validación del correo electrónico
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        errorEmail.textContent = 'Por favor, ingresa un correo electrónico válido.';
+        valido = false;
+      } else {
+        errorEmail.textContent = '';
+      }
+
+      // Validación de la edad
+      if (isNaN(edad) || edad < 18) {
+        errorEdad.textContent = 'La edad debe ser un número mayor o igual a 18.';
+        valido = false;
+      } else {
+        errorEdad.textContent = '';
+      }
+
+      return valido;
+    }
+    </script>
+</body>
+</html>

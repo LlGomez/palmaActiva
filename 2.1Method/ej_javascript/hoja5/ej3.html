@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// function precioTotal(precio, iva){
+//     var precioFinal = precio + precio * iva/100;
+//     return (precioFinal);
+// }
+
+
+var precio = prompt("Introduce el precio del producto");
+precio = parseFloat(precio);
+var iva = prompt("Introduce el iva del producto");
+iva = parseFloat(iva);
+
+var ivaCalculado = precio + precio * (iva / 100);
+
+
+document.write(ivaCalculado);
+
+    </script>
+</body>
+</html>

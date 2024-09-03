@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creamos un array booleano para la traducción
+const traduccionBooleano = ["verdadero", "falso"];
+
+// Solicitamos al usuario un número entre 0 y 9
+const numeroUsuario = parseInt(prompt("Introduce un número entre 0 y 9: "));
+
+// Validamos que el número esté dentro del rango
+if (numeroUsuario >= 0 && numeroUsuario <= 9) {
+  // Obtenemos la traducción booleana correspondiente
+  const valorBooleano = traduccionBooleano[numeroUsuario === 0 ? 1 : 0];
+
+  // Mostramos el alert con el nombre verdadero
+  alert(`El valor introducido (${numeroUsuario}) es ${valorBooleano}`);
+} else {
+  // Si el número está fuera de rango, mostramos un mensaje de error
+  alert("Error: El número introducido debe estar entre 0 y 9.");
+}
+
+    </script>
+</body>
+</html>

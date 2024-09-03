@@ -1,0 +1,21 @@
+body{
+    background-color: burlywood;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+h1{
+    color: brown;
+}
+h3{
+    color: orange;
+}
+.rosa{
+    background-color: pink;
+    width: fit-content;
+    font-size: 30px;
+}
+.blanco{
+    background-color: white;
+    width: fit-content;
+    font-size: 30px;
+}

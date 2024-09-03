@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ej4</title>
+    <style> /*grid*/
+        form {
+            display: grid;
+            grid-template-areas:
+                "h1 h1"
+                "uno dos"
+                "tres cuatro"
+                "cinco seis"
+                "siete ocho"
+                "nueve nueve"
+                "diez diez"
+                "once ."
+                "doce doce"
+                "trece trece";
+        }
+
+        h1 {
+            grid-area: h1;
+        }
+
+        .uno {
+            grid-area: uno;
+        }
+
+        .dos {
+            grid-area: dos;
+        }
+
+        .tres {
+            grid-area: tres;
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+        }
+
+        .cinco {
+            grid-area: cinco;
+        }
+
+        .seis {
+            grid-area: seis;
+        }
+
+        .siete {
+            grid-area: siete;
+        }
+
+        .ocho {
+            grid-area: ocho;
+        }
+
+        .nueve {
+            grid-area: nueve;
+        }
+
+        .diez {
+            grid-area: diez;
+        }
+
+        .once {
+            grid-area: once;
+        }
+
+        .doce {
+            grid-area: doce;
+        }
+
+        .trece {
+            grid-area: trece;
+        }
+
+        input {
+            display: block;
+            width: 40%;
+        }
+
+        textarea {
+            display: block;
+        }
+
+        #terminos {
+            display: inline;
+        }
+        .formulario{
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 540px;
+        }
+        i {
+            transform: scale(0.7);
+            color: grey;
+        }
+    </style> <!--grid-->
+    <style>
+        * {
+            font-family: cabin;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.7rem;
+            margin-top: 9%;
+        }
+        .izq{
+            margin-left: 20px;
+        }
+        .der{
+            margin-right: 15px;
+        }
+        form>div{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 230px;
+            height: 22px;
+            margin-top: 2px;
+        }
+        #SiNo{
+            width: 484px;
+        }
+        #terminos {
+            width: 20px;
+            height: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        textarea{
+            width: 485px;
+            height: 70px;
+            margin-top: 5px;
+        }
+        .doce{
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .lala{
+            color: black;
+            transform: scale(1);
+            margin-right: 3px;
+        }
+        .lele{
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Raleway';
+        }
+        .trece{
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        .submit{
+            width: 250px;
+            height: 50px;
+            color: white;
+            background-color: #13aede;
+            border: none;
+            border-bottom: 5px solid lightslategrey;
+            font-size: 20px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <form action="Ej4.php">
+            <h1>QUIERO QUE ME CONTACTE UN ASESOR</h1>
+            <div class="uno izq">
+                <i class="fa-solid fa-earth-americas"></i>
+                <label for="pais">País</label>
+                <input type="text" id="pais" name="pais" list="paises" required>
+                <datalist id="paises">
+                    <option value="España">España</option>
+                    <option value="México">México</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Canadá">Canadá</option>
+                </datalist>
+            </div>
+            <div class="dos der">
+                <i class="fa-solid fa-phone"></i>
+                <label for="numero">Teléfono</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+            <div class="tres izq">
+                <i class="fa-solid fa-user"></i>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="cuatro der">
+                <i class="fa-solid fa-user"></i>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="cinco izq">
+                <i class="fa-regular fa-envelope"></i>
+                <label for="correo">Introduce tu e-mail</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="seis der">
+                <i class="fa-solid fa-building"></i>
+                <label for="web">Web corporativa</label>
+                <input type="text" id="web" name="web" required>
+            </div>
+            <div class="siete izq">
+                <label for="text2">¿Cuántos emails envias al mes?</label>
+                <input type="number" id="text2" name="text2" required>
+            </div>
+            <div class="ocho der">
+                <label for="text3">¿Cuántos SMS envias al mes?</label>
+                <input type="number" id="text3" name="text3" required>
+            </div>
+            <div class="nueve izq">
+                <label for="SiNo">¿Realizas campañas de display retargeting?</label>
+                <input type="text" id="SiNo" name="SiNo" list="opcion" size="40px" placeholder="  ---" required>
+                <datalist id="opcion">
+                    <option value="si">
+                    <option value="no">
+                </datalist>
+            </div>
+            <div class="diez izq">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="once">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto <a href="https://www.google.es/">la politica de privacidad</a></label>
+            </div>
+            <div class="doce">
+                <i class="fa-solid fa-phone lala"></i>
+                Contacta por teléfono: <span class="lele">91 414 91 94</span>
+            </div>
+            <div class="trece">
+                <button class="submit" type="submit">Quiero que me informen</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <p id="novedades">Novedades</p>
+    <script>
+        // Obtener el elemento del párrafo por su ID
+const parrafoNovedades = document.getElementById('novedades');
+
+// Crear una nueva fecha
+const fechaActual = new Date();
+
+// Formatear la fecha en el formato deseado (día/mes/año)
+const opcionesFecha = { year: 'numeric', month: '2-digit', day: '2-digit' };
+const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+
+// Combinar el texto nuevo con la fecha formateada
+const nuevoTexto = `Últimas Noticias ${fechaFormateada}`;
+
+// Asignar el nuevo texto al contenido del párrafo
+parrafoNovedades.textContent = nuevoTexto;
+    </script>
+</body>
+</html>

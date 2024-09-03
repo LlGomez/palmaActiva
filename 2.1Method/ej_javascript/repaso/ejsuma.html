@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calcularSuma()">Calcular suma</button>
+    <button onclick="calcularIva()">Calcular Iva</button>
+    <script>
+        function calcularSuma(){
+            var num1 = prompt("Dame un numero");
+        num1 = parseFloat(num1);
+        var num2 = prompt("Dame otro numero");
+        num2 = parseFloat(num2);
+
+        suma = num1 + num2;
+        
+        document.write(suma);
+        }
+        
+        function calcularIva(precio, iva){
+        var precio = prompt("Introduce el precio del producto");
+        precio = parseFloat(precio);
+        var iva = prompt("Introduce el iva del producto");
+        iva = parseFloat(iva);
+
+        var ivaCalculado = precio + precio * (iva / 100);
+
+        document.write(ivaCalculado);
+        }
+    </script>
+</body>
+</html>
