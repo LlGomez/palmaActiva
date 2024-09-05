@@ -1,0 +1,126 @@
+:root {
+    --visualizar-borde: 1px solid rgb(255, 0, 0);
+    --visualizar-fondo: rgb(117, 197, 115);
+    font-size: 14px;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.visualizar {
+    width: 10px;
+    height: 10px;
+    border: var(--visualizar-borde);
+    background-color: var(--visualizar-fondo);
+}
+html {
+    background-color: #f6f6f6;
+}
+
+body {
+    /* border: var(--visualizar-borde); */
+    /* background-color: var(--visualizar-fondo); */
+    background-color: #ffffff;
+    max-width: 1100px;
+    /* margin: 0 auto; */
+}
+
+#caja-todas-noticias {
+    margin: 80px;
+}
+
+.noticias {
+    /* border: var(--borde-basico); */
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
+.img,
+#img {
+    /* border: var(--borde-basico); */
+    width: 474px;
+    height: 324px;
+}
+
+.texto {
+    /* border: var(--borde-basico); */
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px 27px;
+}
+
+.titulos-noticias {
+    margin: 0;
+    font-weight: 400;
+    font-size: 32.5px;
+}
+
+.pNoticias {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+hr {
+    opacity: 0.3;
+    border: 0.1px solid grey;
+}
+
+
+
+.pLeft {
+    padding-left: 10px;
+}
+
+#caja-inf-paginas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+#caja-pagina_contenidos {
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+#caja-botones-paginas {
+    display: flex;
+    flex-direction: row;    
+    font-size: 12px;
+}
+
+.anterior-siguiente {
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    padding: 5px 15px;
+    background-color: #ffffff;
+}
+
+.botones {
+    background-color: #ffffff;
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    margin: 0px 3px;
+    padding: 5px 10px;
+
+}
+.anterior {
+    margin-right: 2px;
+}
+.siguiente {
+    margin-left: 2px;
+}

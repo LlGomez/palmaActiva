@@ -6,15 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" placeholder="Introduce ºC">
-    <input type="number" placeholder="Introduce ºF">
-
+    <input type="number" placeholder="Introduce ºC" id="celsius">
+    <input type="number" placeholder="Introduce ºF" id="fahrenheit">
+    <button onclick="convertirTemperatura()">Convertir</button>
     <script>
         function convertirTemperatura() {
   const celsiusInput = document.getElementById('celsius');
   const fahrenheitInput = document.getElementById('fahrenheit');
-  const celsiusValue   
- = parseFloat(celsiusInput.value);
+  const celsiusValue = parseFloat(celsiusInput.value);
   const fahrenheitValue = parseFloat(fahrenheitInput.value);   
 
 

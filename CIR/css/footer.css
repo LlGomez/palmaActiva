@@ -2,6 +2,8 @@
     --borde-basico: 1px solid black;
     --fondo-gris-footer: #f6f6f6;
     --fondo-rojo-footer: #e03e52;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
 }
 
 body {
@@ -9,6 +11,8 @@ body {
     font-family: sans-serif;
     max-width: 1100px;
     margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
 }
 
 ul {
